@@ -1,7 +1,6 @@
 function solve(rows, columns) {
 
     let matrix = [];
-    let increaser = 1;
 
     for (let i = 0; i < rows; i++) {
         let currRow = [];
@@ -19,6 +18,7 @@ function solve(rows, columns) {
     for (let i = 1; i <= rotateUntil; i++) {
 
         matrix[currentRow][currnetColumn] = i;
+
         if (direction == 'right') {
             currnetColumn++;
             cout++;
@@ -70,10 +70,8 @@ function solve(rows, columns) {
                 cout = 0;
             }
         }
-
     }
     matrix.forEach(x => console.log(x.join(' ')));
-
 }
 
 solve(5, 5);
