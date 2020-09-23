@@ -1,3 +1,1 @@
-# JS-Advanced-SoftUni
-Some testing codes
-Don't judje
+Hope you find what you search for :)
