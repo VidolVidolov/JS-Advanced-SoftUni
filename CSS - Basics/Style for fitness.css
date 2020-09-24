@@ -1,0 +1,77 @@
+body {
+    background-color: #F0F1F5;
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+    padding: 1rem 17rem;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+nav ul li a {
+    color: #F9690E;
+    text-decoration: none;
+}
+
+nav {
+    text-align: right;
+    float: right;
+}
+header{
+    padding-bottom: 20px;
+    font-size: 19px;
+    
+}
+header>p {
+    float: left;
+    color: #F9690E;
+    margin: 0 5rem;
+}
+
+nav ul {
+    float: left;
+    margin: 0;
+}
+
+main section:nth-child(1) {
+    background-image: url("C:/Users/Admin/Desktop/Softuni/Introduction-to-CSS-Lab/L2_01_Fitness-Site/Requirements-and-Resources/Images/picture.jpg");
+    display: block;
+    margin-top: 23px;
+    background-size: cover;
+    background-position: center;
+    padding: 11rem 15rem;
+    text-align: center;
+    color: white;
+}
+
+main section:nth-child(1) button {
+    color: white;
+    background-color: #F9690E;
+    font-size: 19px;
+    padding: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 22px 0;
+}
+main section:nth-child(1) button:hover{
+    background-color: white;
+    color: #F9690E;
+}
+
+main section:nth-child(1) span {
+    color: #F9690E;
+}
+
+.info{
+    background-color: #F9690E;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+    padding: 19px;
+    margin-right: 1px;
+}
