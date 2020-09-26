@@ -8,7 +8,7 @@ class Circle {
         return this.radius * 2;
     }
     set diameter(diameter){
-        return this.radius = diameter / 2;
+        this.radius = diameter / 2;
     }
     get area(){
         return Math.PI * Math.pow(this.radius,2);
