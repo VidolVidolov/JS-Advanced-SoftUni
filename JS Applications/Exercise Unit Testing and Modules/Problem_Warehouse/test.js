@@ -42,6 +42,13 @@ describe('Warehouse', () => {
                 let instance = new Warehouse(0);
             }, 'Invalid given warehouse space');
         });
+
+        it('Should work properly', () => {
+            const expectedCapacity = 25;
+            const expectedProducts = { "Food": {}, "Drink": {} };
+            assert.equal(instance.capacity, expectedCapacity);
+            assert.deepEqual(instance.availableProducts, expectedProducts);
+        })
     });
 
     describe('AddProduct', () => {
