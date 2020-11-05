@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.0.0/firebase-auth.js"></script>
+    <script src="/__/firebase/8.0.0/firebase-firestore.js"></script>
+    <script src="auth.js"></script>
+    <script src="style.css"></script>
+</head>
+
+<body>
+    <div class="toBeinline" style="display: inline-block;">
+        <div>Enter id to find the book given ID</div>
+        <input type="text" id="enter" /><br>
+        <button id="clicker">Click to find the book with that ID</button><br>
+        <textarea name="information" id="info" cols="30" rows="10" style="display: none;"></textarea><br>
+    </div>
+
+    <div class="toBeinline" style="display: inline-block;">
+        <div>Enter your author</div>
+        <input type="text" id="author" /><br>
+        <div>Enter your title</div>
+        <input type="text" id="title" /><br>
+        <button id="insert">Click to save the book in the Database</button><br>
+        <textarea name="information" id="info2" cols="30" rows="10" style="display: none;"></textarea><br>
+    </div>
+
+    <div class="toBeinline" style="display: inline-block;">
+        <div>Enter your ID</div>
+        <input type="text" id="identification" /><br>
+        <div>Enter your author</div>
+        <input type="text" id="authorChange" /><br>
+        <div>Enter your title you want to change</div>
+        <input type="text" id="titleTochage" /><br>
+        <button id="change">Click to save the changes</button><br>
+        <textarea name="information" id="info2" cols="30" rows="10" style="display: none;"></textarea><br>
+    </div>
+
+    <div class="toBeinline" style="display: inline-block;">
+        <div>Enter your ID</div>
+        <input type="text" id="idToPass" /><br>
+        <div>Enter your author</div>
+        <input type="text" id="authorToChange" /><br>
+        <button id="changer">Click to save the changes</button><br>
+        <textarea name="information" id="info3" cols="30" rows="10" style="display: none;"></textarea><br>
+    </div>
+
+    <div class="toBeinline">
+        <button id="allID">Get All id</button>
+        <textarea name="id" id="id" cols="30" rows="10"></textarea>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
