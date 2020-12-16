@@ -1,0 +1,22 @@
+{{>header}}
+
+{{#if loggedIn}}
+<section id="allSongsView">
+    <div class="background-spotify">
+        <div class="song-container">
+            <h1>All Songs</h1>
+            <a href="/create">
+                <button type="button" class="btn-lg btn-block new-song-btn">Add a new song</button>
+            </a>
+            {{#each songs}}
+                {{>song}}
+            {{/each}}
+            
+        </div>
+    </div>
+</section>
+{{else}}
+<section id="homeView">
+    <img class="m-auto background-image" width="100%" src="https://wallpaperaccess.com/full/1373271.jpg">
+</section>
+{{/if}}

@@ -1,0 +1,15 @@
+.container{
+    display: none;
+}
+.site-nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+#img-container{
+    width: 300px;
+}
+
+#imgg{
+    width: 300;
+}

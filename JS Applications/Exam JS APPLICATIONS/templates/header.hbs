@@ -1,0 +1,21 @@
+<!-- Header -->
+<nav>
+    <div class="left-container">
+        <ul>
+            <li><a href="/">Home</a></li>
+            {{#if loggedIn}}
+            <li><a href="#/myDestinations">Destinations</a></li>
+            <li><a href="#/add">Add +</a></li>
+            {{else}}
+            <li><a href="#/login">Login</a></li>
+            <li><a href="#/register">Register</a></li>
+            {{/if}}
+        </ul>
+    </div>
+    {{#if loggedIn}}
+    <div class="right-container">
+        <span>Welcome, {{email}} |</span>
+        <a href="#/logout" class="log-out">Logout</a>
+    </div>
+    {{/if}}
+</nav>

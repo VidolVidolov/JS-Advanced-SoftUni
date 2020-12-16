@@ -1,0 +1,14 @@
+{{>header}}
+<section class="myPet">
+    <h3>Name: {{data.name}}</h3>
+    <p>Category: {{data.category}}</p>
+    <p class="img"><img src="{{data.imageUrl}}"></p>
+    <p class="description">{{data.description}}</p>
+    <div class="pet-info">
+        {{#if creator}}
+        <a href="#/details/{{data.id}}"><button class="button">Details</button></a>
+        <a href="#/delete/{{data.id}}"><button class="button">Delete</button></a>
+        <i class="fas fa-heart"></i> <span>5</span>
+        {{/if}}
+    </div>
+</section>

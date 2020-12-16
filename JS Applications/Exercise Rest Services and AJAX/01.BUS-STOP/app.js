@@ -21,8 +21,8 @@ function getInfo() {
         .then(response => response.json())
         .then(data => {
             let buses = Object.entries(data.buses);
+            Array.from(ulBusses.children).forEach(x => x.remove()); // so the new scedule dont append to the older one 
             buses.forEach(([key, value]) => {
-                Array.from(ulBusses.children).forEach(x => x.remove()); // so the new scedule dont append to the older one 
                 let li = document.createElement('li');
                 li.textContent = `Buss ${key} arrives in ${value} minutes`;
                 ulBusses.appendChild(li);

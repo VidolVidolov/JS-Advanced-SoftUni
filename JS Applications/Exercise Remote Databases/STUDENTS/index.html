@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+</head>
+
+<body>
+    <div>Add Student</div><br>
+    <label for="grade">ID</label><br>
+    <input type="number" id="id"><br>
+    <label for="Fist name">Fist name</label><br>
+    <input type="text" id="firstName"><br>
+    <label for="last">Last Name</label><br>
+    <input type="text" id="lastName"><br>
+    <label for="fac">Faculty number</label><br>
+    <input type="number" id="fac"><br>
+    <label for="grade">Grade</label><br>
+    <input type="number" id="grade"><br>
+    <button id="submit">Submit</button>
+    <button id="getAll">Get All Students</button>
+
+    <table id="results">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Faculty Number</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="./app.js"></script>
+    <script src="auth.js"></script>
+</body>
+
+</html>
